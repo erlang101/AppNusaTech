@@ -1680,8 +1680,8 @@ btnTriggerAvatarActions?.addEventListener("click", () => {
 function handleAvatarUpload(file) {
   if (!file) return;
 
-  if (file.size > 2 * 1024 * 1024) {
-    showToast("Ukuran foto maksimal 2 MB!");
+  if (file.size > 5 * 1024 * 1024) {
+    showToast("Ukuran foto maksimal 5 MB!");
     return;
   }
 
@@ -1833,8 +1833,8 @@ formSetPassword?.addEventListener("submit", async (e) => {
 async function handlePhotoUpload(file) {
   if (!file) return;
 
-  if (file.size > 2 * 1024 * 1024) {
-    showToast("Ukuran foto maksimal 2 MB!");
+  if (file.size > 5 * 1024 * 1024) {
+    showToast("Ukuran foto maksimal 5 MB!");
     return;
   }
 
